@@ -1,0 +1,94 @@
+/* ===========================
+   PATIENT TABLE DESIGN
+   Matches Doctor Table Style
+   =========================== */
+
+.table-wrapper {
+  margin-top: 8px;
+  background: transparent;
+}
+
+/* Outer card */
+.table-scroll {
+  background: #ffffff;
+  border-radius: 10px;
+  border: 10px solid #d9d9d9;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Patient Table */
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  color: #222;
+}
+
+/* Header */
+.patient-table thead {
+  background: #11b89a;
+  color: #fff;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.patient-table thead th {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.patient-table thead th:last-child {
+  border-right: none;
+}
+
+/* Table Rows */
+.patient-table tbody tr {
+  border-bottom: 10px solid #d9d9d9;
+  transition: background 0.2s ease-in-out;
+  background: #fff;
+}
+
+.patient-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.patient-table tbody tr:hover {
+  background: #f2fbfa;
+}
+
+/* Table Cells */
+.patient-table tbody td {
+  padding: 14px 18px;
+  vertical-align: middle;
+  color: #323C47;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Responsive Behavior */
+@media (max-width: 950px) {
+  .table-scroll {
+    overflow-x: auto;
+  }
+
+  .patient-table {
+    width: 1100px;
+    min-width: 950px;
+  }
+}
+
+/* ===========================
+   Empty Table Message
+   =========================== */
+.patient-table tbody td[colspan] {
+  text-align: center;
+  font-weight: 600;
+  color: #888;
+  background: #fcfcfc;
+  padding: 40px 0;
+}
